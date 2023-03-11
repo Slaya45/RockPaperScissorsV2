@@ -8,13 +8,14 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    min-height: 90%;
+    min-height: 100%;
+    height: 950px;
     
     
 }
 #rock-el{
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     color: aliceblue;
     background-color: black;
     font-size: 20px;
@@ -31,8 +32,8 @@ body{
                 
 }
 #paper-el{
-    width: 150px;
-    height: 150px;
+    width: 110px;
+    height: 110px;
     color: aliceblue;
     background-color: black;
     font-size: 20px;
@@ -48,23 +49,24 @@ body{
     background-repeat: no-repeat; 
 } 
 #scissors-el{
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 110px;
+    max-height: 110px;
     width: 100%;
     height: 150px;
     color: aliceblue;
     background-color: black;
     font-size: 20px;
     border-radius: 50%;
-    padding: 2px;
     margin-left: 6%;
     margin-right: 6%;
+    margin-bottom: 20%;
     border-width: 5px;
     border-color: rgb(67, 49, 49);
     cursor: pointer; 
     background-image: url(scissorsV2.jpg); 
     background-position: center center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+
    
     
 }
@@ -80,30 +82,34 @@ body{
     font-weight: bold;
 }
 #computerChoice-el{
-    font-size: 66px;
+    font-size: 45px;
     padding: 2px;
-    margin: 20px;
+    margin: 5px;
+    padding-top: 20%;
 }
 #playerChoice-el{
-    font-size: 66px;
+    font-size: 45px;
     padding: 2px;
-    margin: 20px;
+    margin: 5px;
+    
 }
 #result-el{
-    font-size: 66px;
-    padding: 2px;
-    margin: 20px;
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+ 
 }
 #playerScoreBoard-el{
-    font-size: 66px;
+    font-size: 45px;
     padding: 2px;
-    margin: 20px;
+    margin: 5px;
     color: rgb(255, 255, 255);
 }
 
 #computerScoreBoard-el{
-    font-size: 66px;
+    font-size: 45px;
     padding: 2px;
-    margin: 20px;
+    margin: 5px;
     color: rgb(255, 255, 255);
 }
