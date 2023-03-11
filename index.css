@@ -1,0 +1,75 @@
+* {
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+#rock-el{
+    width: 150px;
+    height: 150px;
+    color: aliceblue;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 6%;
+    background-repeat: no-repeat; 
+    background-position: 0px 0px; 
+    border: none;           
+    cursor: pointer;      
+    height: 16px;           
+    padding-left: 16px;     
+    vertical-align: middle; 
+}
+#paper-el{
+    width: 150px;
+    height: 150px;
+    color: aliceblue;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 6%;
+} 
+#scissors-el{
+    width: 150px;
+    height: 150px;
+    color: aliceblue;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 2px;
+    margin: 6%;
+   
+    
+}
+#result-el{
+    color: rgb(70, 212, 9);
+    font-size: 86px;
+
+}
+#computerChoice-el{
+    font-size: 66px;
+    padding: 2px;
+    margin: 20px;
+}
+#playerChoice-el{
+    font-size: 66px;
+    padding: 2px;
+    margin: 20px;
+}
+#result-el{
+    font-size: 66px;
+    padding: 2px;
+    margin: 20px;
+}
+#playerScoreBoard-el{
+    font-size: 66px;
+    padding: 2px;
+    margin: 20px;
+}
+
+#computerScoreBoard-el{
+    font-size: 66px;
+    padding: 2px;
+    margin: 20px;
+}
