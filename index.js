@@ -11,6 +11,7 @@ let playerScore = 0
 let computerScore = 0
 
 
+
 function buttonRock(){
     playerChoice =  "Rock"
     playerChoiceEl.textContent = "Player:" + " " + "Rock"
@@ -32,6 +33,7 @@ function buttonPaper(){
     result()
     
 }
+
 
 function computerChoice(){
 
