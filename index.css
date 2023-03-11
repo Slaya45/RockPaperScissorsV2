@@ -59,7 +59,7 @@ body{
     border-radius: 50%;
     margin-left: 6%;
     margin-right: 6%;
-    margin-bottom: 20%;
+    margin-bottom: 20px;
     border-width: 5px;
     border-color: rgb(67, 49, 49);
     cursor: pointer; 
@@ -85,7 +85,7 @@ body{
     font-size: 45px;
     padding: 2px;
     margin: 5px;
-    padding-top: 20%;
+    padding-top: 10%;
 }
 #playerChoice-el{
     font-size: 45px;
@@ -104,7 +104,7 @@ body{
     font-size: 45px;
     padding: 2px;
     margin: 5px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 #computerScoreBoard-el{
