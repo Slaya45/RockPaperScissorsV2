@@ -4,6 +4,8 @@ let computerScoreBoardEl = document.getElementById("computerScoreBoard-el")
 let computerChoiceEl = document.getElementById("computerChoice-el")
 let playerChoiceEl = document.getElementById("playerChoice-el")
 let resultEl = document.getElementById("result-el")
+const button1 = document.querySelectorAll("button")
+
 
 let playerChoice = " "
 let randomComputerChoices = " " 
@@ -13,7 +15,15 @@ let matchCount = 1
 
 
 
+function matchLimiter(){
 
+    if (matchCount <= 6){
+        button1.disabled = false
+    } else {
+        button1.disabled = true
+    }
+}
+ 
 
 
 
@@ -24,12 +34,14 @@ function buttonRock(){
     computerChoice()
     result()
     
+    
 }
 function buttonScissors(){
     playerChoice = "Scissors"
     playerChoiceEl.textContent = "Player:" + " " + "Scissors"
     computerChoice() 
     result()
+    
 }
 
 function buttonPaper(){
@@ -37,6 +49,7 @@ function buttonPaper(){
     playerChoiceEl.textContent = "Player:" + " " + "Paper"
     computerChoice()
     result()
+   
     
 }
 
@@ -110,6 +123,7 @@ function result(){
     }
     console.log(randomComputerChoices)
     console.log(playerChoice)
+    console.log(matchLimiter)
 }
 
 
