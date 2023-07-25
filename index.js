@@ -4,7 +4,6 @@ let computerScoreBoardEl = document.getElementById("computerScoreBoard-el")
 let computerChoiceEl = document.getElementById("computerChoice-el")
 let playerChoiceEl = document.getElementById("playerChoice-el")
 let resultEl = document.getElementById("result-el")
-const button1 = document.querySelectorAll("button")
 
 
 let playerChoice = " "
@@ -13,19 +12,12 @@ let playerScore = 0
 let computerScore = 0
 let matchCount = 1
 
+let buttons = document.querySelectorAll("button");
 
-
-function matchLimiter(){
-
-    if (matchCount <= 6){
-        button1.disabled = false
-    } else {
-        button1.disabled = true
-    }
-}
- 
-
-
+buttons.forEach(function (button) {
+  button.addEventListener("click", function (event) {
+  });
+});
 
 
 function buttonRock(){
@@ -121,9 +113,20 @@ function result(){
             playerScoreBoardEl.textContent = "Your Score: " + playerScore;
         }
     }
-    console.log(randomComputerChoices)
-    console.log(playerChoice)
-    console.log(matchLimiter)
+
+    if (computerScore === 3) {
+        resultEl.textContent = "Computer wins the game!";
+        disableButtons();
+      } else if (playerScore === 3) {
+        resultEl.textContent = "You win the game!";
+        disableButtons();
+      }
 }
 
-
+function disableButtons() {
+    buttons.forEach(function (button) {
+        button.disabled = true;
+    });
+}
+    
+     
