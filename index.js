@@ -1,4 +1,4 @@
-
+let matchCountEL = document.getElementById("matchCount-el")
 let playerScoreBoardEl = document.getElementById("playerScoreBoard-el")
 let computerScoreBoardEl = document.getElementById("computerScoreBoard-el")
 let computerChoiceEl = document.getElementById("computerChoice-el")
@@ -9,6 +9,12 @@ let playerChoice = " "
 let randomComputerChoices = " " 
 let playerScore = 0
 let computerScore = 0
+let matchCount = 1
+
+
+
+
+
 
 
 
@@ -56,18 +62,23 @@ function computerChoice(){
 }
 
 function result(){
-    
+    matchCountEL.textContent = "Match Count: " + matchCount
+    console.log(matchCount)
+
     if (randomComputerChoices == playerChoice){
         resultEl.textContent = "Tie!"
+        matchCount++;
 
     }else if(playerChoice == "Rock"){
         if(randomComputerChoices == "Paper"){
             resultEl.textContent = "Computer Won";
             computerScore++;
+            matchCount++;
             computerScoreBoardEl.textContent = "Computer Score: " + computerScore;
         }else{
             resultEl.textContent == "You Won"
             playerScore++;
+            matchCount++;
             playerScoreBoardEl.textContent = "Your Score: " + playerScore;
         }
     }
@@ -75,10 +86,12 @@ function result(){
         if(randomComputerChoices == "Rock"){
             resultEl.textContent = "Computer Won";
             computerScore++;
+            matchCount++;
             computerScoreBoardEl.textContent = "Computer Score: " + computerScore;
         }else{
             resultEl.textContent = "You Won";
             playerScore++;
+            matchCount++;
             playerScoreBoardEl.textContent = "Your Score: " + playerScore;
         }
     }
@@ -86,10 +99,12 @@ function result(){
         if(randomComputerChoices == "Scissors"){
             resultEl.textContent = "Computer Won";
             computerScore++;
+            matchCount++;
             computerScoreBoardEl.textContent = "Computer Score: " + computerScore;
         }else{
             resultEl.textContent = "You Won";
             playerScore++;
+            matchCount++;
             playerScoreBoardEl.textContent = "Your Score: " + playerScore;
         }
     }

@@ -81,11 +81,17 @@ body{
     font-size: 36px;
     font-weight: bold;
 }
+#matchCount-el{
+    font-size: 45px;
+    padding: 2px;
+    margin: 5px;
+    padding-top: 5%;
+}
 #computerChoice-el{
     font-size: 45px;
     padding: 2px;
     margin: 5px;
-    padding-top: 10%;
+    padding-top: 3%;
 }
 #playerChoice-el{
     font-size: 45px;
